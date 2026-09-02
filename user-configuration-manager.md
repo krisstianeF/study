@@ -38,7 +38,7 @@ def view_settings(settings_dict = dict):
 
     result = 'Current User Settings:\n'
     for index, key in enumerate(settings_dict):
-        result += f"{key.capitalize()}: {settings_dict[key]}\n"
+        result += f"{key.capitalize()}: {settings_dict[key]}\n" # key.capitalize() make first letter big
     return result
 
 
