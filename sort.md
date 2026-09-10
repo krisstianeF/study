@@ -37,3 +37,22 @@ def selection_sort(arr: list):
 
 print(selection_sort([33, 1, 89, 2, 67, 245]))
 ```
+
+# Luhn algorithm
+Verify card number
+```python
+def verify_card_number(digits: str):
+    digits = digits.replace(' ', '').replace('-', '')
+    
+    arr = [int(i) for i in digits]
+
+    for i in range(len(arr[:-1]) - 1, -1, -2):
+        arr[i] = arr[i] * 2
+        if arr[i] > 9:
+            arr[i] -= 9
+        
+    if sum(arr) % 10 != 0:
+        return 'INVALID!'
+    else:
+        return 'VALID!'
+```
