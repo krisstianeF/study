@@ -44,3 +44,5 @@ This repo for learning
 | **Consensus** | AI‑powered search engine for academic papers | https://consensus.app/?ref=unbeat |
 | **Koda** | AI agent for VS Code | - |
 | **MeiGen** | Large library of prompts for AI models | https://www.meigen.ai/ |
+
+![-](https://i.pinimg.com/1200x/c2/94/ba/c294bac3f087bc43afa7830b0dbfd4be.jpg)
