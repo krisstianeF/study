@@ -113,6 +113,7 @@
 
 
 <details open> <summary> <b>See Examples</b> </summary>
+
 ```html
 <form action="" method="">
   <label for="email"> Email Address: </label>
