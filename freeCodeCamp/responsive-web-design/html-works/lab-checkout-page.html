@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout Page</title>
+</head>
+<body>
+  <h1>Checkout</h1>
+
+  <section>
+    <h2>Your Cart</h2>
+    <div class="cart-item">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Colorful geometric cube toy">
+      <div class="item-info">
+        <h3>Geometric Cube Toy</h3>
+        <p>Price: $24.99</p>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment Information</h2>
+    <form>
+      <label for="card-name">
+        Cardholder Name
+        <span class="required-indicator" aria-hidden="true">*</span>
+      </label>
+      <input
+        type="text"
+        id="card-name"
+        name="card-name"
+        required
+        placeholder="John Doe"
+      >
+
+      <label for="card-number">
+        Card Number
+        <span class="required-indicator" aria-hidden="true">*</span>
+      </label>
+      <input
+        type="text"
+        id="card-number"
+        name="card-number"
+        required
+        placeholder="1234 5678 9012 3456"
+        aria-describedby="card-number-help"
+      >
+      <p id="card-number-help">Enter 16 digits without spaces or dashes</p>
+    </form>
+  </section>
+</body>
+</html>

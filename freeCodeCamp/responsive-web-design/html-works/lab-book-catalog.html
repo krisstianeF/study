@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Catalog</title>
+
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 20px;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+    }
+    thead {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+    }
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    tbody tr:hover {
+      background-color: #f0f5ff;
+      transition: background-color 0.3s ease;
+    }
+    tfoot td {
+      background-color: #e8f4fd;
+      font-weight: bold;
+      color: #2c3e50;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      th, td {
+        padding: 10px 8px;
+        font-size: 14px;
+      }
+    }
+  </style>
+
+
+</head>
+<body>
+  <h1>Book Catalog</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Publication Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>Fiction</td>
+        <td>1960</td>
+      </tr>
+      <tr>
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>Dystopian Fiction</td>
+        <td>1949</td>
+      </tr>
+      <tr>
+        <td>Pride and Prejudice</td>
+        <td>Jane Austen</td>
+        <td>Romance</td>
+        <td>1813</td>
+      </tr>
+      <tr>
+        <td>The Great Gatsby</td>
+        <td>F. Scott Fitzgerald</td>
+        <td>Classic</td>
+        <td>1925</td>
+      </tr>
+      <tr>
+        <td>Harry Potter and the Sorcerer's Stone</td>
+        <td>J.K. Rowling</td>
+        <td>Fantasy</td>
+        <td>1997</td>
+      </tr>
+      <tr>
+        <td>The Catcher in the Rye</td>
+        <td>J.D. Salinger</td>
+        <td>Coming-of-Age</td>
+        <td>1951</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Total Books: 6</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

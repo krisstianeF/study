@@ -41,7 +41,7 @@ text
 | Item | Description | Link | Profile |
 |------|-------------|------|---------|
 | **Class central** | Large collection of courses | https://www.classcentral.com/u/5823335 | kp98 |
-| **freeCodeCamp** curriculum | Web-design, html, css, javascript, python, databases, front-end & back-end development, A2 & B1 english for developers (beta) | https://www.freecodecamp.org/learn | @krisstaine_f, kp98 |
+| **freeCodeCamp** curriculum | Web-design, html, css, javascript, python, ... | https://www.freecodecamp.org/learn | @krisstaine_f, kp98 |
 | **Code Run** | Collection of code tasks | https://coderun.yandex.ru/catalog | yandex |
 
 ## Lib

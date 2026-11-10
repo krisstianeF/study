@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f9ff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+    }
+    h2 {
+      color: #3498db;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    audio, video {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .transcript-section p {
+      font-size: 1em;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multimedia Player</h1>
+
+  <!-- Audio Section -->
+  <section>
+    <h2>Sailing Away</h2>
+    <audio controls aria-label="Sailing Away music track">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Video Section -->
+  <section>
+    <h2>What is the Map Method and How Does it Work?</h2>
+    <video controls width="600" aria-label="Video tutorial: What is the Map Method and How Does it Work?">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4">
+      <track
+        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Transcript Section -->
+  <section class="transcript-section">
+    <h2>Transcript</h2>
+    <p>
+Welcome to this tutorial on the map method in JavaScript.
+
+The map method is a built‑in array function that creates a new array by applying a function to each element of the original array.
+
+Key points about map:
+- It does not modify the original array
+- It returns a new array of the same length
+- Each element in the new array is the result of the callback function
+
+Example:
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+// Result: [2, 4, 6, 8]
+
+The map method is commonly used for transforming data, such as extracting specific properties from objects or formatting values.
+
+Remember: map is perfect when you want a one‑to‑one transformation of array elements.
+    </p>
+  </section>
+</body>
+</html>

@@ -1,5 +1,7 @@
 HTML (HyperText Markup Language) — это не язык программирования, а язык разметки. Это **скелет** любой веб-страницы. Если вы знаете Markdown, HTML покажется вам очень похожим, просто с более строгими правилами.
 
+*More on [HTML Review](https://www.freecodecamp.org/learn/responsive-web-design-v9/review-html/review-html)*
+
 - [Template](#template)
 - [Text and titles](#text-and-titles)
 - [Links](#links)
