@@ -1,0 +1,53 @@
+body {
+  background-color: #f0f8ff; /* AliceBlue — not white */
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.blog-post-card {
+  background-color: white;
+  width: 350px; /* Chosen width */
+  text-align: center; /* Centered text alignment */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures image stays within rounded corners */
+}
+
+.post-img {
+  width: 100%; /* Fills the card's entire width */
+  display: block;
+  border-bottom: 3px solid #3498db; /* Bottom border */
+}
+
+.post-content {
+  padding: 20px; /* Padding inside the card */
+}
+
+.post-title {
+  color: #2c3e50; /* Non‑default text color (dark blue) */
+  margin: 15px 0; /* Margins on all sides */
+  font-size: 1.5em;
+}
+
+.post-excerpt {
+  color: #555; /* Non‑default text color (dark gray) */
+  margin: 10px 0; /* Margins on all sides */
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block; /* Required display property */
+  color: white; /* Text color other than default */
+  background-color: #3498db; /* Background color */
+  margin: 15px 0; /* Margins on all sides */
+  padding: 12px 24px; /* Padding on all sides */
+  border-radius: 6px; /* Rounded corners */
+  text-decoration: none; /* Removes underline from link */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.read-more:hover {
+  background-color: #2980b9; /* Hover effect: changes background color */
+}

@@ -32,7 +32,7 @@ HTML (HyperText Markup Language) — это не язык программиро
 ```
 
 ```html
-<!-- Comment text -->
+<!-- comment -->
 ```
 
 ## Text and titles
