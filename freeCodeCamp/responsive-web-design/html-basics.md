@@ -1,4 +1,4 @@
-HTML (HyperText Markup Language) — это не язык программирования, а язык разметки. Это **скелет** любой веб-страницы. Если вы знаете Markdown, HTML покажется вам очень похожим, просто с более строгими правилами.
+HTML (HyperText Markup Language) — это не язык программирования, а язык разметки. Это **скелет** любой веб-страницы.
 
 *More on [HTML Review](https://www.freecodecamp.org/learn/responsive-web-design-v9/review-html/review-html)*
 
@@ -14,7 +14,7 @@ HTML (HyperText Markup Language) — это не язык программиро
 - [Scripts](#scripts)
 ---
 
-### Template
+## Template
 
 Любой HTML-файл должен начинаться с этой структуры. Без неё браузер не поймет, что вы от него хотите.
 
@@ -35,7 +35,7 @@ HTML (HyperText Markup Language) — это не язык программиро
 <!-- Comment text -->
 ```
 
-### Text and titles
+## Text and titles
 Теги — это команды в угловых скобках `< > ... </ >`  
 `<strong> жирный текст </strong>`  
 `<em> курсив </em>`
@@ -70,7 +70,7 @@ HTML (HyperText Markup Language) — это не язык программиро
 ```
 
 
-### Links
+## Links
 ```html
 <a href="https://github.com">Перейти на GitHub</a>
 <!-- Ссылка: href - адрес -->
@@ -113,14 +113,14 @@ a:active {
   color: black;
 }
 ```
-### Images
+## Images
 
 ```html
 <img src="cat.png" alt="Тут должен быть котик" width="300">
 <!-- Картинка: src - путь к файлу. alt - текст, если картинка не загрузится. width - ширина -->
 ```
 
-### Lists
+## Lists
 
 ```html
 <!-- Unordered List -->
@@ -158,7 +158,7 @@ a:active {
   <dd>JavaScript</dd> -->
 </dl>
 
-### Blocks
+## Blocks
 Тег `<div>` — это невидимая коробка. Она нужна, чтобы группировать элементы вместе (например, чтобы потом покрасить их в один цвет через CSS).
 
 ```html
@@ -181,7 +181,7 @@ a:active {
 </footer>
 ```
 
-### Elements
+## Elements
 
 ```html
 <button>Button_text</button>   
@@ -220,7 +220,7 @@ a:active {
 | `<rp></rp>` |  |
 | `<rt></rt>` |  |
 
-### Audio And Video
+## Audio And Video
 
 ```html
 <audio
@@ -258,7 +258,7 @@ a:active {
 </video>
 ```
 
-### SVG
+## SVG
 
 ```html
 <!-- Star Icon -->
@@ -280,7 +280,7 @@ a:active {
 </svg>
 ```
 
-### Scripts
+## Scripts
 ```html
 <script src="path-to-javascript-file.js"></script>
 ```
