@@ -49,6 +49,7 @@ text
 
 | Item | Description | Link | Profile |
 |------|-------------|------|---------|
+VS Code |  | https://code.visualstudio.com/docs
 | **DevDocs** | Large collection of programming languages documentation | https://devdocs.io/ | - |
 | **Anime.js** | JavaScript animation library for websites | - | - |
 | **Roadmaps** | Community effort to create roadmaps, guides and other educational content to help guide developers | https://roadmap.sh/ | pk89 |
