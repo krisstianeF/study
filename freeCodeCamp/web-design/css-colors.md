@@ -18,12 +18,12 @@ CSS supports **named colors**, **hex**, **rgb/rgba**, **hsl/hsla**, and keywords
 
 | Format | Example | Description |
 | --- | --- | --- |
-| Named color | `red` | One of 148 predefined names (below). |
-| Hex | `#ff0000`, `#f00` | RGB in hexadecimal. |
-| `rgb()` / `rgba()` | `rgb(255,0,0)`, `rgba(255,0,0,0.5)` | Red, green, blue (+ alpha). |
-| `hsl()` / `hsla()` | `hsl(0,100%,50%)` | Hue, saturation, lightness (+ alpha). |
-| `transparent` | `transparent` | Fully transparent (= `rgba(0,0,0,0)`). |
-| `currentColor` | `currentColor` | Inherits the element’s `color`. |
+| Named color | `red` | One of 148 predefined names (below) |
+| Hex | `#ff0000`, `#f00` | `#RRGGBB` RGB in hexadecimal |
+| `rgb()` / `rgba()` | `rgb(255,0,0)`, `rgba(255,0,0,0.5)` | Red, green, blue (+ alpha) |
+| `hsl()` / `hsla()` | `hsl(0,100%,50%)` | Hue, saturation, lightness (+ alpha) |
+| `transparent` | `transparent` | Fully transparent (= `rgba(0,0,0,0)`) |
+| `currentColor` | `currentColor` | Inherits the element’s `color` |
 
 ## Gradients
 
@@ -31,7 +31,7 @@ Gradients are **images**, so use them with `background` or `background-image` �
 
 | Type | Syntax | Description |
 | --- | --- | --- |
-| `linear-gradient()` | `linear-gradient(angle \| to side, color-stop...)` | Gradient along a straight line |
+| `linear-gradient()` | `linear-gradient(angle/to side, color-stop %, ...)` | Gradient along a straight line |
 | `radial-gradient()` | `radial-gradient(shape size at position, color-stop...)` | Gradient radiating from a center point |
 | `conic-gradient()` | `conic-gradient(from angle at position, color-stop...)` | Gradient rotated around a center point |
 | `repeating-linear-gradient()` | same as linear, but repeats | Repeating linear stripes |
