@@ -69,3 +69,7 @@ selector {
 | `div.item:hover` | `(0, 0, 2, 1)` |
 
 </details>
+
+## Box Model
+
+![Box model in css](css-box-model.png)
