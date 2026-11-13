@@ -72,4 +72,21 @@ selector {
 
 ## Box Model
 
-![Box model in css](css-box-model.png)
+![Box model in css](assets/css-box-model.png)
+
+## Typography
+
+`Serif` typeface - classical style with small lines at the end of characters  
+`Sans Serif` typeface - modern look, without the small lines at the end of characters
+
+|  |  |  |
+|--|--|--|
+| ![alt text](assets/image.png) | ![alt text](assets/image-1.png) | ![alt text](assets/image-2.png)
+
+|  |  |
+|--|--|
+| ![alt text](assets/image-3.png) | ![alt text](assets/image-4.png) |
+
+| Kerning | Tracking | Leading | 
+|--|--|--|
+| ![alt text](assets/image-5.png) | ![alt text](assets/image-7.png) | ![alt text](assets/image-6.png) |
