@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumen — The Desk Lamp That Follows Your Day</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a class="brand" href="#hero">
+        <img
+          id="header-img"
+          src="https://cdn-icons-png.flaticon.com/512/702/702797.png"
+          alt="Lumen logo — a stylised light bulb"
+        />
+        <span>Lumen</span>
+      </a>
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#demo">Demo</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#signup">Sign up</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>The desk lamp that follows your day.</h1>
+        <p>
+          Lumen shifts its color temperature from crisp morning white to warm
+          evening amber, so your eyes stay comfortable from the first email to
+          the last page.
+        </p>
+        <a class="cta" href="#signup">Get early access</a>
+      </section>
+
+      <section id="features">
+        <h2>Why Lumen</h2>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Circadian tuning</h3>
+            <p>
+              Automatically warms up after sunset to help your body wind down
+              without harsh blue light.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Flicker-free dimming</h3>
+            <p>
+              A stepless dial goes from 1% to 100% with zero flicker, even at
+              the lowest setting.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Focus timer</h3>
+            <p>
+              A gentle pulse of light marks the end of each focus block — no
+              phone buzzing required.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="demo">
+        <h2>See it in action</h2>
+        <video
+          id="video"
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          controls
+          muted
+          playsinline
+        ></video>
+      </section>
+
+      <section id="pricing">
+        <h2>Simple pricing</h2>
+        <ul class="pricing-list">
+          <li><strong>Lumen One</strong> — $129, includes the lamp and the app.</li>
+          <li><strong>Lumen Duo</strong> — $239, two lamps that sync together.</li>
+          <li><strong>Lumen Pro</strong> — $349, adds a monitor light bar.</li>
+        </ul>
+      </section>
+
+      <section id="signup">
+        <h2>Get early access</h2>
+        <p>
+          Drop your email and we'll send a single message when Lumen ships. No
+          newsletters, no noise.
+        </p>
+        <form
+          id="form"
+          action="https://www.freecodecamp.org/email-submit"
+          method="post"
+        >
+          <label for="email" class="visually-hidden">Email address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+          <input id="submit" type="submit" value="Notify me" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Lumen Labs · Made with care in a small studio.</p>
+    </footer>
+  </body>
+</html>

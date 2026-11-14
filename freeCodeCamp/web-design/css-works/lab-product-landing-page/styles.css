@@ -1,0 +1,261 @@
+/* styles.css */
+:root {
+  --ink: #1c1b19;
+  --paper: #faf7f0;
+  --amber: #e2a23b;
+  --amber-dark: #b97f1c;
+  --muted: #6b6459;
+  --line: #e3dccb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  line-height: 1.6;
+}
+
+/* ---- Sticky header ---- */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 32px;
+  background-color: rgba(250, 247, 240, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+#header-img {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--amber-dark);
+  border-bottom-color: var(--amber);
+}
+
+/* ---- Sections ---- */
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+section {
+  padding: 72px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+section h2 {
+  font-size: 1.9rem;
+  margin: 0 0 20px;
+}
+
+#hero {
+  padding-top: 96px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+#hero p {
+  max-width: 620px;
+  margin: 0 auto 28px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--amber);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta:hover {
+  background-color: var(--amber-dark);
+  color: var(--paper);
+  transform: translateY(-1px);
+}
+
+/* ---- Features (Flexbox) ---- */
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature {
+  flex: 1 1 260px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.feature h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ---- Video ---- */
+#video {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+/* ---- Pricing ---- */
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.pricing-list li {
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+/* ---- Signup form ---- */
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+#email {
+  flex: 1 1 260px;
+  padding: 12px 16px;
+  font: inherit;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+#email:focus {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+#submit {
+  padding: 12px 24px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--ink);
+  background-color: var(--amber);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#submit:hover {
+  background-color: var(--amber-dark);
+  color: var(--paper);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 32px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Media query ---- */
+@media (max-width: 640px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  #nav-bar {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 56px 0;
+  }
+}
