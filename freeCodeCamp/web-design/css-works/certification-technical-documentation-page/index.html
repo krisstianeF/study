@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox — Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Flexbox Guide</header>
+      <a class="nav-link" href="#Introduction_to_Flexbox">Introduction to Flexbox</a>
+      <a class="nav-link" href="#Flex_Container">Flex Container</a>
+      <a class="nav-link" href="#Flex_Direction">Flex Direction</a>
+      <a class="nav-link" href="#Justify_Content">Justify Content</a>
+      <a class="nav-link" href="#Align_Items">Align Items</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_Flexbox">
+        <header>Introduction to Flexbox</header>
+        <p>
+          Flexbox is a one-dimensional layout model that distributes space
+          among items in a container and aligns them along a main axis and a
+          cross axis.
+        </p>
+        <p>
+          It is ideal for navigation bars, card rows, centering content, and
+          any layout where items need to share available space predictably.
+        </p>
+        <code>display: flex;</code>
+        <ul>
+          <li>Main axis — the primary direction items are laid out.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Flex_Container">
+        <header>Flex Container</header>
+        <p>
+          A flex container is any element with <code>display: flex</code> or
+          <code>display: inline-flex</code>. Its direct children become flex
+          items.
+        </p>
+        <p>
+          The container controls direction, wrapping, alignment, and spacing
+          between items through its properties.
+        </p>
+        <code>display: flex;</code>
+        <ul>
+          <li>Children of a flex container are automatically flex items.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Flex_Direction">
+        <header>Flex Direction</header>
+        <p>
+          <code>flex-direction</code> sets the main axis: <code>row</code>,
+          <code>column</code>, <code>row-reverse</code>, or
+          <code>column-reverse</code>.
+        </p>
+        <p>
+          Changing the direction flips both the main axis and the cross axis,
+          which affects how alignment properties behave.
+        </p>
+        <code>flex-direction: column;</code>
+        <ul>
+          <li><code>row</code> is the default and lays items horizontally.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Justify_Content">
+        <header>Justify Content</header>
+        <p>
+          <code>justify-content</code> aligns items along the main axis. Common
+          values are <code>flex-start</code>, <code>center</code>,
+          <code>flex-end</code>, <code>space-between</code>,
+          <code>space-around</code>, and <code>space-evenly</code>.
+        </p>
+        <p>
+          It only works when there is free space left along the main axis after
+          items have been sized.
+        </p>
+        <code>justify-content: space-between;</code>
+        <ul>
+          <li><code>space-between</code> pushes the first and last items to the edges.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Align_Items">
+        <header>Align Items</header>
+        <p>
+          <code>align-items</code> aligns items along the cross axis. Values
+          include <code>stretch</code>, <code>flex-start</code>,
+          <code>center</code>, <code>flex-end</code>, and
+          <code>baseline</code>.
+        </p>
+        <p>
+          To center a single item on the cross axis without affecting the
+          others, use <code>align-self</code> on that item instead.
+        </p>
+        <code>align-items: center;</code>
+        <ul>
+          <li><code>stretch</code> is the default and fills the cross axis.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
