@@ -1,0 +1,125 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #efe9df;
+  background-image: radial-gradient(#d8cfc0 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: #2b2a27;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#main {
+  max-width: 760px;
+  margin: 56px auto;
+  padding: 40px 32px 56px;
+  background-color: #fbf8f2;
+  border: 1px solid #ddd3c2;
+  border-radius: 4px;
+  box-shadow: 0 18px 40px rgba(43, 42, 39, 0.08);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #9a6b3f;
+}
+
+#title {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(2rem, 7vw, 3.4rem);
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.dates {
+  margin: 8px 0 32px;
+  text-align: center;
+  font-style: italic;
+  color: #6f6a60;
+}
+
+#img-div {
+  margin: 0 0 32px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e2d9c9;
+  border-radius: 4px;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px;
+  filter: sepia(0.15) contrast(1.05);
+}
+
+#img-caption {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #6f6a60;
+}
+
+#tribute-info p {
+  margin: 0 0 20px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+#tribute-info p::first-letter {
+  font-size: 1.4em;
+}
+
+#tribute-link {
+  display: block;
+  width: fit-content;
+  margin: 36px auto 0;
+  padding: 12px 28px;
+  background-color: #2b2a27;
+  color: #fbf8f2;
+  text-decoration: none;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#tribute-link:hover {
+  background-color: #9a6b3f;
+  transform: translateY(-2px);
+}
+
+#tribute-link:focus-visible {
+  outline: 3px solid #9a6b3f;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  #main {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 32px 20px 48px;
+  }
+
+  #tribute-info p {
+    text-align: left;
+  }
+}

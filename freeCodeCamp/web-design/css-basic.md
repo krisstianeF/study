@@ -90,3 +90,10 @@ selector {
 | Kerning | Tracking | Leading | 
 |--|--|--|
 | ![alt text](assets/image-5.png) | ![alt text](assets/image-7.png) | ![alt text](assets/image-6.png) |
+
+## Accessibility
+
+- **WebAIM Color Contrast Checker** — online; enter foreground/background hex codes; instantly checks contrast ratio against WCAG AA/AAA.
+- **TPGi Colour Contrast Analyzer** — desktop app; analyzes whole pages, picks colors from screen, simulates color vision deficiencies.
+- Both help ensure readable, accessible text/background contrast.
+- Use together with manual testing and user feedback.
