@@ -12,6 +12,7 @@ HTML (HyperText Markup Language) — это не язык программиро
 - [Audio And Video](#audio-and-video)
 - [SVG](#svg)
 - [Scripts](#scripts)
+- [Forms](#forms)
 ---
 
 ## Template
@@ -284,3 +285,105 @@ a:active {
 ```html
 <script src="path-to-javascript-file.js"></script>
 ```
+
+## Forms
+
+
+```html
+<form action="" method="">
+  <label for="email"> Email Address: </label>
+  <input type="email" id="email" placeholder="example@email.com" />
+  <button>Ok</button>
+</form>
+```
+
+<form action="" method="">
+  <label for="email"> Email Address: </label>
+  <input type="email" id="email" placeholder="example@email.com" />
+  <button>Ok</button>
+</form>
+
+
+
+```html
+<fieldset>
+  <legend>Was this your first time at our hotel?</legend>
+  <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
+  <label for="yes-option">Yes</label>
+  <input id="no-option" type="radio" name="hotel-stay" value="no" />
+  <label for="no-option">No</label>
+</fieldset>
+```
+
+<fieldset>
+  <legend>Was this your first time at our hotel?</legend>
+  <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
+  <label for="yes-option">Yes</label>
+  <input id="no-option" type="radio" name="hotel-stay" value="no" />
+  <label for="no-option">No</label>
+</fieldset>
+
+
+
+```html
+<fieldset>
+  <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
+
+  <input type="checkbox" id="ads" name="choice" value="ads" />
+  <label for="ads">Social Media Ads</label>
+
+  <input type="checkbox" id="recommendation" name="choice" value="recommendation"/>
+  <label for="recommendation">Personal Recommendation</label>
+  
+  <input type="checkbox" id="location" value="location" name="choice"> 
+  <label for="location">Location </label>       
+
+  <input type="checkbox" id="reputation" value="reputation" name="choice"> 
+  <label for="reputation">Reputation </label>    
+</fieldset>
+```
+
+<fieldset>
+  <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
+
+  <input type="checkbox" id="ads" name="choice" value="ads" />
+  <label for="ads">Social Media Ads</label>
+
+  <input type="checkbox" id="recommendation" name="choice" value="recommendation"/>
+  <label for="recommendation">Personal Recommendation</label>
+  
+  <input type="checkbox" id="location" value="location" name="choice"> 
+  <label for="location">Location </label>       
+
+  <input type="checkbox" id="reputation" value="reputation" name="choice"> 
+  <label for="reputation">Reputation </label>    
+</fieldset>
+
+
+```html
+<fieldset>
+  <legend>Ratings</legend>
+  <label for="service">How was the service?</label>
+
+  <select name="service" id="service">
+    <option value="poor">Poor</option>
+    <option value="satisfactory">Satisfactory</option>
+    <option value="good">Good</option>
+    <option value="very-good">Very Good</option>
+    <option selected value="excellent">Excellent</option>
+  </select>
+</fieldset>
+```
+
+<fieldset>
+  <legend>Ratings</legend>
+  <label for="service">How was the service?</label>
+
+  <select name="service" id="service">
+    <option value="poor">Poor</option>
+    <option value="satisfactory">Satisfactory</option>
+    <option value="good">Good</option>
+    <option value="very-good">Very Good</option>
+    <option selected value="excellent">Excellent</option>
+  </select>
+</fieldset>
