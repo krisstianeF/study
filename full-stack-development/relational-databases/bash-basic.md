@@ -131,3 +131,21 @@ Bitwise operators: Perform bit-level operations on integers.
 | `$(( expr ))` | Capture arithmetic result |
 | `cmd &` | Background |
 | `wait` | Wait for background jobs |
+
+
+## Nano
+
+ Open (and create if not exist) the file:
+```bash
+nano filename
+```
+|  |  |
+|--|--|
+`ctrl` + `k` | clear the line you on
+`ctrl` + `x` | exit
+`ctrl` + `o` then `enter` | save file
+
+```
+^G Help   ^O Write Out    ^F Where Is   ^K Cut      ^T Execute  ^C Location     M-U Undo    M-A Set Mark    M-] To Bracket    M-B Previous
+^X Exit   ^R Read File    ^\ Replace    ^U Paste    ^J Justify  ^/ Go To Line   M-E Redo    M-6 Copy        ^B Where Was      M-F Next
+```
